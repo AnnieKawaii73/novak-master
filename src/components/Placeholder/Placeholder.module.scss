@@ -1,0 +1,30 @@
+$breakpoint: 500px;
+.div {
+    padding: 1em;
+    width: 65%;
+    margin: auto;
+    img {
+        margin-top: 0.8em;
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-bottom: 4rem
+    }
+    span {
+        margin-top: 3vw;
+        font-size: 10vw;
+        color: #31647B;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: $breakpoint) {
+    .div {
+        img {
+            width: $breakpoint*0.6;
+        }
+        span{
+            font-size: 4em;
+        }
+    }
+}
